@@ -168,3 +168,44 @@ link.html
     visit <a href="https://www.harvard.edu">Harvard</a>
     </body>
 </html>
+
+
+//variation of link.html
+
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <style>
+
+            #Harvard
+            {
+                color: #ff0000;
+            }
+
+            #Yale
+            {
+                color: #0000ff;
+            }
+
+            a
+            {
+                text-decoration: none;
+            }
+
+
+            a:hover
+            {
+                text-decoration: underline;
+            }
+
+        </style>
+        <title>
+            link
+        </title>
+    </head>
+    <body>
+    visit <a href="https://www.harvard.edu" id="Harvard">Harvard</a>
+    or <a href="https://www.yale.edu" id="Yale">Yale</a>
+    </body>
+</html>
