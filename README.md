@@ -135,3 +135,36 @@ table.html
     </body>
 </html>
 
+
+
+image.html
+
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <title>
+            image
+        </title>
+    </head>
+    <body>
+        <img alt="Harvard University" src="harvard.jpg">
+    </body>
+</html>
+
+
+
+link.html
+
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <title>
+            link
+        </title>
+    </head>
+    <body>
+    visit <a href="https://www.harvard.edu">Harvard</a>
+    </body>
+</html>
