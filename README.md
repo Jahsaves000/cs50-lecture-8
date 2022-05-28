@@ -209,3 +209,81 @@ link.html
     or <a href="https://www.yale.edu" id="Yale">Yale</a>
     </body>
 </html>
+
+
+search.html
+
+>
+
+<html lang="en">
+    <head>
+        <title>
+            search
+        </title>
+    </head>
+    <body>
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="search">
+            <input type="submit" value="Search">
+        </form>
+    </body>
+</html>
+
+
+
+css.html
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <title>css</title>
+    </head>
+
+    <body class="centered">
+
+        <header class="large">
+            John Harvard
+        </header>
+
+        <main class="medium">
+            Welcome to my home page!
+        </main>
+
+        <footer class="small">
+            copyright &#169; John Harvard
+        </footer>
+    </body>
+</html>
+
+
+styles.css is in conjunction to css.html
+
+styles.css
+
+body
+{
+    background-color: blue;
+    color: white;
+}
+.centered{
+    text-align: center;
+}
+
+.large {
+    font-size: large;
+}
+
+.medium
+{
+    font-size: medium;
+}
+
+.small
+{
+    font-size: small;
+}
+
+/* when defining a reusable class start with (.)dot 
