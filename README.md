@@ -287,3 +287,94 @@ body
 }
 
 /* when defining a reusable class start with (.)dot 
+
+
+hello.html with javascript
+
+
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value
+                alert('Hello, ' + name);
+            }
+        </script>
+        <title>
+            hello, title
+        </title>
+    </head>
+    <body>
+        <form onsubmit="greet(); return false;">
+            <input autocomplete="off" autofocus id="name" placeholder="What's your name?" type="text">
+            <input type="submit" value="Greet me">
+        </form>
+    </body>
+</html>
+
+hello.html more revisions
+
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <script>
+
+            function greet()
+            {
+                let name = document.querySelector('#name').value;
+                alert('hello, ' + name);
+            }
+
+            function listen()
+            {
+                document.querySelector('form').addEventListener('submit', greet);
+            }
+            document.addEventListener('DOMContentLoaded', listen);
+
+        </script>
+        <title>
+            hello, title
+        </title>
+    </head>
+    <body>
+        <form>
+            <input autocomplete="off" autofocus id="name" placeholder="What's your name?" type="text">
+            <input type="submit" value="Greet me">
+        </form>
+    </body>
+</html>
+
+
+hello.html
+
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('form').addEventListener('submit', function() {
+                    let name = document.querySelector('#name').value;
+                    alert('hello, ' + name);
+                });
+            });
+
+
+        </script>
+        <title>
+            hello, title
+        </title>
+    </head>
+    <body>
+        <form>
+            <input autocomplete="off" autofocus id="name" placeholder="What's your name?" type="text">
+            <input type="submit" value="Greet me">
+        </form>
+    </body>
+</html>
+
